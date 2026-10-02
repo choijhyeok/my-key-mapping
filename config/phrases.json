@@ -1,0 +1,12 @@
+[
+  {"digit":"1","text":"push pr 진행"},
+  {"digit":"2","text":"알려줘"},
+  {"digit":"3","text":"계속해줘"},
+  {"digit":"4","text":"진행해줘"},
+  {"digit":"5","text":"확인해줘"},
+  {"digit":"6","text":"artifact 확인"},
+  {"digit":"7","text":"확인해봐"},
+  {"digit":"8","text":"반영해줘"},
+  {"digit":"9","text":"신규 이슈 발급해줘"},
+  {"digit":"0","text":"수정해줘"}
+]

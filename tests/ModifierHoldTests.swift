@@ -1,0 +1,17 @@
+import Foundation
+
+var hold = ModifierHold()
+assert(!hold.update(chordDown: true, otherKeyDown: false, now: 0))
+assert(!hold.update(chordDown: true, otherKeyDown: false, now: 2.99))
+assert(hold.update(chordDown: true, otherKeyDown: false, now: 3))
+assert(!hold.update(chordDown: true, otherKeyDown: false, now: 10))
+assert(!hold.update(chordDown: false, otherKeyDown: false, now: 11))
+assert(!hold.update(chordDown: true, otherKeyDown: false, now: 12))
+assert(!hold.update(chordDown: true, otherKeyDown: true, now: 13))
+assert(!hold.update(chordDown: true, otherKeyDown: false, now: 16))
+assert(!hold.update(chordDown: false, otherKeyDown: false, now: 17))
+assert(!hold.update(chordDown: true, otherKeyDown: false, now: 18))
+assert(!hold.update(chordDown: false, otherKeyDown: false, now: 20))
+assert(!hold.update(chordDown: true, otherKeyDown: false, now: 21))
+assert(hold.update(chordDown: true, otherKeyDown: false, now: 24))
+print("PASS: 3-second hold, one opening per hold, digit cancellation, early release, rearming")

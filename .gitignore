@@ -1,0 +1,9 @@
+.DS_Store
+dist/
+.build/
+__pycache__/
+*.pyc
+backups/
+analysis/request-frequency.*
+Sources/VialProbe.swift
+*.log
